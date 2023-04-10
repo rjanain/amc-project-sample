@@ -1,0 +1,142 @@
+\documentclass{article}
+
+\usepackage{enumerate,multicol,fp,amsmath}
+\usepackage[box,completemulti,separateanswersheet]{automultiplechoice}
+\usepackage{totcount}
+\regtotcounter{AMCquestionaff}
+
+\AMCcodeHspace=1em
+\AMCcodeVspace=1em 
+\AMCformHSpace=1em
+\AMCformVSpace=2ex
+\AMCboxStyle{shape=square,size=2.5ex,down=.4ex,rule=.5pt,outsidesep=.1em,color=black}
+
+\begin{document}
+\def\AMCformQuestion#1{{\sc Q#1.}}
+\AMCrandomseed{1237893}
+\setdefaultgroupmode{withoutreplacement}
+
+\input{questions.tex}
+
+\onecopy{4}{
+ %%% beginning of the test sheet header:
+
+\begin{center}
+\Large
+MA 106 Endsem Exam : Part A\\
+Indian Institute of Technology Bombay\\
+Date: 19th April 2023
+\end{center}
+\noindent
+\begin{minipage}{0.33\textwidth}\centering
+Timing: 9.30 to 10.30 AM 
+\end{minipage}
+\begin{minipage}{0.33\textwidth}\centering
+Spring 2023, II 
+\end{minipage}
+\begin{minipage}{0.33\textwidth}\centering
+Max Mark: 20  
+\end{minipage}
+\vspace{0.05in}
+\hrule
+\vspace{0.2in}
+\noindent
+\begin{minipage}{0.6\textwidth}
+\Large 
+Name:\\
+
+Roll Number: 
+\end{minipage}
+\begin{minipage}{0.4\textwidth}\Large
+Div/Tutorial: 
+\end{minipage}
+\vspace{0.2in}
+\hrule
+ \begin{center}
+ Please read the following instruction before answering the question. 
+ 
+ \begin{enumerate}[a.]
+ \item The (Optical Mark Recognition) OMR sheet will be collected back at 10.30 AM. 
+ \item There is \total{AMCquestionaff} questions in Part A. Every question contains a single correct answer. 
+ \item Use pencil/pen to fill the correct choices in the OMR sheet. {\bf Answer provided in the OMR sheet will only be evaluated. }
+ \end{enumerate}
+
+ \end{center}
+ \vspace{0.05in}
+\hrule
+ \vspace{0.2in}
+ %%% end of the header
+
+\insertgroup{test}
+\insertgroup[3]{limit}
+\insertgroup[3]{sequence}
+\insertgroup[5]{series}
+ %\AMCcleardoublepage 
+
+\AMCaddpagesto{1} 
+
+ \AMCformBegin 
+
+ %%% beginning of the answer sheet header
+
+
+ 
+ \begin{center}
+\Large
+{\bf
+MA 106 Part A Optical Mark Recognition (OMR) Sheet}
+\end{center}
+
+\hrulefill
+
+
+\vspace{0.2in}
+\noindent
+\begin{minipage}[t]{0.45\textwidth}
+\centering
+{\Large Encode Rollnumber}\\\vspace*{0.25in}
+
+{\setlength{\parindent}{1pt}\hspace*{\fill}
+\AMCcodeGrid[top]{rollnumber}{0123456789BD,0123456789BD,0123456789BD,0123456789BD,0123456789BD,0123456789BD,0123456789BD,0123456789BD,0123456789BD}
+\hspace*{\fill}
+}
+\end{minipage}
+\begin{minipage}[t]{0.15\textwidth}
+\centering
+{\Large Division}\\\vspace*{0.25in}
+
+{\setlength{\parindent}{1pt}\hspace*{\fill}\AMCcodeGrid{division}{1234}\hspace*{\fill}
+}
+\end{minipage}
+\vrule\hfill\namefield{
+\begin{minipage}[t]{0.35\textwidth}\Large
+\vspace*{0.5cm}
+
+Name: 
+\vspace*{1cm}\dotfill 
+
+\vspace*{0.5cm}\dotfill
+
+\vspace*{1cm}
+Rollnumber: \vspace*{1cm}\dotfill 
+
+\vspace*{0.5cm}
+Div./Tut.: \vspace*{1cm}\dotfill 
+\end{minipage}
+}
+\vspace{0.2in}
+\hrule
+\begin{center}
+{\Large Encode your correct choices.}
+
+\end{center}
+ %%% end of the answer sheet header
+\begin{multicols}{2}
+ \AMCform  
+\end{multicols}
+ % \AMCaddpagesto{5} 
+ 
+ 
+
+} 
+\end{document}
